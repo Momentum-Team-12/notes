@@ -1,23 +1,23 @@
-# Intro to Backend Development with Python & Django
+# Welcome to Phase 2 - Python & Django
 
 ---
 
 ## Python Origins
 
-General purpose programming language developed by Guido van Rossum and released in 1991.
+- General purpose programming language developed by Guido van Rossum and released in 1991.
 
 ### Stated Goals
 
-    1. An easy and intuitive language just as powerful as those of the major competitors
-    2. Open source, so anyone can contribute to its development
-    3. Code that is as understandable as plain English
-    4. Suitable for everyday tasks, allowing for short development times
+    1. an easy and intuitive language just as powerful as those of the major competitors;
+    2. open source, so anyone can contribute to its development;
+    3. code that is as understandable as plain English;
+    4. suitable for everyday tasks, allowing for short development times.
 
 ---
 
-## Let's write some Python and see what happens
+## Let's write some Python and see what happens.
 
-Copy this code in an empty Python file, but do not run it yet.
+Copy this code in an empty Python file, but do not run it.
 
 Predict what you think will happen.
 
@@ -29,28 +29,38 @@ def greet(names):
     for name in names:
         print(f"Hi, {name}!")
 
-some_people = ["Jack Black", "Jennifer Lawrence", "Dwayne 'The Rock' Johnson", "Danielle Brooks"]
+our_names = ["Amy", "Jeanette", "Rebecca", "Dawn", "Dwayne 'The Rock' Johnson"]
 
-greet(some_people)
-
+greet(our_names)
 ```
 
 ---
 
 ## Python/JavaScript Comparison
 
-| JavaScript                             | Python                        |
-| -------------------------------------- | ----------------------------- |
-| Array (push)                           | List (append)                 |
-| `function`                             | `def()`                       |
-| White space NBD                        | White space conveys meaning   |
-| `let`/`const` declare variables        | variables not declared        |
-| `if/while (condition) { outcome }`     | `if/while condition: outcome` |
-| `for (let i of array) { function(i) }` | f`or i in list: f(i)`         |
-
+| JavaScript                              | Python                             |
+| --------------------------------------- | ---------------------------------- |
+| Runs in browser, generally (client)     | Runs on server, generally          |
+| White space NBD                         | White space conveys meaning        |
+| Code hoisted, order doesn't matter      | Code read from top to bottom       |
+| camelCase                               | snake_case                         |
+| `console.log()`                         | `print()`                          |
+| `function myFunction(params){}`         | `def myFunction(params):`          |
+| `return`                                | `return `                          |
+| `let`/`const` declare variables         | variables assigned when delcared   |
+| `if/while (condition) { outcome }`      | `if/while condition: outcome`      |
+| `else if (condition) {}`                | `elif condition:`                  |
+| `else {}`                               | `else:`                            |
+| myArray[index] gives item at index      | myList[index] gives item at index  |
+| `for (let i of array) { function(i){}}` | `for i in list: fun(i)`            |
+| Arrays                                  | Lists                              |
+| template literals                       | f strings                          |
+| Objects                                 | Dictionaries                       |
+| DOM Manipulation                        | Nope                               |
+| Event handling/promises                 | asyncio (we probably won't see it) |
 ---
 
-## Try some more Python
+## Let's try reading some more Python. 
 
 ```py
 
@@ -72,7 +82,7 @@ my_sum = sum([1, 2, 3, 17])
 
 ```py
 # variables
-my_variable_name = value
+var_name = value
 
 # functions
 def my_function(parameter1, parameter2):
@@ -90,12 +100,8 @@ if a > b:
 while b < a:
     b += 1
 
-
-my_list = ["cupcake", "sundae", "pie", "churro"]
-
 for item in my_list:
    # do something to the item
-   print(item)
 
 # remember to use snake_case instead of camelCase
 ```
