@@ -72,13 +72,14 @@ And I would expect to see no output.
 ---
 
 - **Parameters** are placeholders in the signature line of a function, in anticipation of input. When the function is called, actual _arguments_ are passed and assigned to the placeholder tags. The function then does what it is instructed to do with the input. For example, if we have a function called `double` that's meant to return double a number, we would write it like this:
- ```py
- def double(number):
-  double_number = 2 * number
-  print(f"Twice your number is {double_number}.")
-  return double_number
  ```
+ def double(number):
+ 	double_number = 2 * number
+  	print(f"Twice your number is {double_number}.")
+  	return double_number
+```
 
+---
 	Why are `print` and `return` both there? `print` shows values in the terminal for humans to read, `return` makes values accessible in the computer's memory, so `print` is for people, and `return` is for the code.
 
 - When we want to call the function and pass an **argument**, for example, the integer 5, we do this:
@@ -202,6 +203,8 @@ You can obtain items from a tuple by its index, as we did with lists:
 ---
 **Dictionaries** are key: value pairs, Python's version of the concept of _hash tables_. As with Webster's Dictionary, where you look up definitions by the word, you can look up values by their keys in Python dictionaries. Keys and values can be almost any data type, except: _keys can only appear once in a dictionary, and keys must be of an immutable type (no lists or dictionaries)_. Values can repeat any number of times in a dictionary and can be of any type. Note that dictionaries _do not_ have indexes. They do (as of version 3.6) retain the order that items were inserted, but we don't use indexes to retrieve or update information.
 
+---
+
 ```py
  foo_fighters = {
   "Dave Grohl": ("guitar", "lead vocals"),
@@ -211,6 +214,11 @@ You can obtain items from a tuple by its index, as we did with lists:
   "Taylor Hawkins": ("drums", "percussion", "backing vocals"),
   "Rami Jaffee": ("keyboard", "piano"),
   }
+```
+---
+
+```py
+
 # to obtain what Dave Grohl plays in Foo Fighters (now, not the first album where he played everything), we can use the key to find the value.
 > foo_fighters["Dave Grohl"]
 > ('guitar', 'lead vocals')

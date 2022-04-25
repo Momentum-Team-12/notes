@@ -1,3 +1,4 @@
+
 # Lists, Dicts, and Tuples
 
 **💡 To run the code examples, type `python` at the command line prompt.**
@@ -19,6 +20,7 @@ They are indexed like JS arrays and trailing commas can be used.
 >>> nerf_guns[0]
 'Rampage'
 ```
+---
 
 ### Examples of frequently used list methods
 
@@ -50,6 +52,9 @@ Similar to JS objects.
 Notice that you need to put quotation marks around the keys, unlike in JS objects (but like JSON!).
 
 Trailing commas also 👍 in dictionaries, as in lists.
+
+---
+
 
 ```py
 >>> fruit_amounts = {
